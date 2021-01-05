@@ -1,0 +1,27 @@
+HOLD
+
+<p style={{
+      width: '40px',
+      height: '40px',
+      backgroundColor:  '#cc3366'
+      }}></p>
+      <p style={{
+      width: '40px',
+      height: '40px',
+      backgroundColor:  '#ff6699'
+      }}></p>
+      <p style={{
+      width: '40px',
+      height: '40px',
+      backgroundColor:  '#ffcc99'
+      }}></p>
+      <p style={{
+      width: '40px',
+      height: '40px',
+      backgroundColor:  '#ffcccc'
+      }}></p>
+      <p style={{
+      width: '40px',
+      height: '40px',
+      backgroundColor:  '#330000'
+      }}></p>
