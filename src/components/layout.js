@@ -1,5 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
+import humbird from "../../static/humbrd.svg"
+
 const ListLink = props => (
   <li style={{ 
     display: `inline-block`, 
@@ -12,7 +14,16 @@ const ListLink = props => (
   </li>
 )
 
+
+
 export default function Layout({ children }) {
+
+  
+    //this.handleClick = this.handleClick.bind(this);
+  
+  
+ 
+
   return (
     <div style={{ 
       margin: `3rem auto`, 
@@ -43,13 +54,21 @@ export default function Layout({ children }) {
                color: `#330000`,
                padding: `5px`
              }}>mingbird</span> 
-             <span style={{
+             <span 
+             onClick={() => this.handleClick }
+             style={{
                display: `block`,
-               height:`42px`,
-               width:`42px`,
-               backgroundColor: `#ffcc99`
+               height:`133px`,
+               width:`133px`,
+               backgroundColor: `#ffffff`
              }}
-             ></span>
+             
+             ><img src={humbird}
+            style={{
+              height:'100px',
+              padding:'17px 23px'
+            }}
+             alt="Bird Logo"/></span>
              </p>
         </Link>
         <ul>
