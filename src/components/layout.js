@@ -19,11 +19,10 @@ const ListLink = props => (
 export default function Layout({ children }) {
 
   
-    //this.handleClick = this.handleClick.bind(this);
+  const clickHandler = () => {
+    console.log("here")
+  };
   
-  
- 
-
   return (
     <div style={{ 
       margin: `3rem auto`, 
@@ -55,7 +54,7 @@ export default function Layout({ children }) {
                padding: `5px`
              }}>mingbird</span> 
              <span 
-             onClick={() => this.handleClick }
+             onClick={clickHandler}
              style={{
                display: `block`,
                height:`133px`,

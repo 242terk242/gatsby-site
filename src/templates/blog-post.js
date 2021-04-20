@@ -1,20 +1,14 @@
 import React from "react"
-import { Helmet } from "gatsby-plugin-react-helmet"
+import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
 
-// import '../css/blog-post.css'; // make it pretty!
+// import '../css/blog-post.css';
 
-export default function Template() {
-  /* w/ data
-  export default function Template({
-  data // this prop will be injected by the GraphQL query we'll write in a bit
-}) {*/
-
-  // { markdownRemark: post } = data // data.markdownRemark holds your post data
-  
-  /* return block
-<div className="blog-post-container">
-    <Helmet title={`Hummin' - ${post.frontmatter.title}`} />
+export default function Template({ data }) {
+  const { markdownRemark: post } = data
+  return (
+    <div className="blog-post-container">
+      <Helmet title={`Your Blog Name - ${post.frontmatter.title}`} />
       <div className="blog-post">
         <h1>{post.frontmatter.title}</h1>
         <div
@@ -22,14 +16,10 @@ export default function Template() {
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
       </div>
-    </div> 
-  */
-  return (
-     <div></div>
+    </div>
   )
 }
 
-/*
 export const pageQuery = graphql`
   query BlogPostByPath($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
@@ -41,4 +31,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`*/
+`

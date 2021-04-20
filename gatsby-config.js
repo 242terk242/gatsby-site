@@ -27,11 +27,15 @@ plugins: [
     }
   },
   {
-    resolve: `gatsby-plugin-catch-links`,
+    resolve:
+     `gatsby-plugin-catch-links`,
     options: {
       // Links are relative to this directory
       excludeRegex: /excluded-link/,
     },
   },
+  {
+    resolve:  `gatsby-plugin-react-helmet`
+  }
 ]
 }
